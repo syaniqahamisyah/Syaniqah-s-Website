@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Little Joys</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf7;
+      color: #333;
+    }
+
+    #container {
+      max-width: 1700px;
+      margin: auto;
+      background-color: #fce5e5;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(252, 229, 229,);
+      padding: 20px;
+    }
+
+    #header img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 3px solid #ffb6c1;
+
+    }
+
+      #nav {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 10px;
+
+    }
+
+   #nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px 18px;
+  background: linear-gradient(to right, #ffe0e0, #fddcdc);
+  border-radius: 8px;
+  display: inline-block;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#nav a:hover {
+  background: linear-gradient(to right, #ffbcbc, #ffa0a0);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5em;
+    }
+
+    .section {
+      padding: 40px 20px;
+      border-bottom: 1px solid #eee;
+      text-align: center;
+    }
+
+    .interest-title {
+      font-size: 2em;
+      margin-bottom: 20px;
+      font-family: 'Pacifico', cursive;
+      color: #d67f7f;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+        .card {
+      background: transparent;
+      width: 250px;
+      height: 300px;
+      perspective: 1000px;
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .card-front {
+      background: #fff;
+    }
+
+    .card-back {
+      background: #fcefee;
+      transform: rotateY(180deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      color: #444;
+      font-size: 0.95em;
+    }
+
+    .card-front img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    .card-front p {
+      padding: 10px;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    .description {
+      font-style: italic;
+      color: #b05e27;
+      font-size: 0.9em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #fcefee;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        width: 90%;
+        height: 320px;
+      }
+    }
+
+    #footer {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 10px;
+      color: black;
+      font-size: 0.9em;
+      border-top: 2px solid #ffb6c1;
+    }
+
+    
+   
+  </style>
+</head>
+<body>
+
+  <div id="container">
+    <div id="header">
+      <img src="images/header_resized.png" alt="header" />
+    </div>
+
+     <div id="nav">
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="family.html">Family & Friends</a>
+      <a href="interests.html">Interests</a>
+      <a href="events.html">Life Events</a>
+      <a href="hometown.html">Hometown</a>
+    </div>
+
+
+<section>
+<h2 style="text-align: center;">🌸My Little Joys🌸</h2>
+
+
+ 
+<div class="section" id="novels">
+    <div class="interest-title">📚 Reading Novels</div>
+    <div class="gallery">
+      <div class="card"> 
+        <div class="card-inner">  
+           <div class="card-front"> 
+             <img src="images/hujan.jpg" alt="book"> 
+             <p>One of my fav novels 🥺</p>
+          </div>
+          <div class="card-back">
+            <p class="description">"Tears and love in every page."</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/tulisan_sastera.jpg" alt="tulisan_sastera">
+            <p>Escape reality & dream beyond the stars ⭐</p>
+          </div>
+          <div class="card-back">
+            <p class="description">“One of most favorite indonesian novel. The most impactful novel that i ever read. One time, i feel afraid to re-read this novel because its too hurt..”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="section" id="photography">
+    <div class="interest-title">📸 Photography</div>
+    <div class="gallery">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/photography.jpg" alt="photography">
+            <p>Every photo has a soul ✨</p>
+          </div>
+          <div class="card-back">
+            <p class="description">"Capture the feeling, not just the image."</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/nature.jpg" alt="nature">
+            <p>Nature through my lens 🌿</p>
+          </div>
+          <div class="card-back">
+            <p class="description">"The earth has music for those who listen" - William Shakespeare</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="section" id="MATCHA">
+    <div class="interest-title">🍃Matcha</div>
+    <div class="gallery">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/matcha.jpg" alt="matcha">
+            <p>One cup of Matcha made my day 🧘‍♀️</p>
+          </div>
+          <div class="card-back">
+            <p class="description">They said, cool girl drink Matcha, the cool girl is Me!</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/pocky.jpg" alt="pocky">
+            <p>Love language, give me Matcha!</p>
+          </div>
+          <div class="card-back">
+            <p class="description">Anything with matcha just perfect</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="section" id="nature">
+    <div class="interest-title">nature</div>
+    <div class="gallery">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/hiking.jpg" alt="nature">
+            <p>Hiking+Nature= Comfort 💕</p>
+          </div>
+          <div class="card-back">
+            <p class="description">When I had a problem, hiking is the sollution. It feels like after hiking, all the burden stay on the top of the mountain.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/sunset.jpg" alt="sunset">
+            <p>Beach, sunset such a good combination</p>
+          </div>
+          <div class="card-back">
+            <p class="description"> There's one person ever said this to me "tetaplah hidup, ada sunset yang perlu kau nikmati hari esok"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="babies">
+    <div class="interest-title">👶 Kids</div>
+    <div class="gallery">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/baby_cat.jpg" alt="nature">
+            <p>Kids heal me also, I don't know why and how 🥹</p>
+          </div>
+          <div class="card-back">
+            <p class="description">When play along with kids, I feel myslef. No judgemental perspective, no try hard, me just being me.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/kids.jpg" alt="Baby Smile">
+            <p>Quality time with them💖</p>
+          </div>
+          <div class="card-back">
+            <p class="description"> Kids being kids, play around and explore new things. When look back, I also same as these innocent kids who need a figure that they can look up for.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+ 
+
+<div id="footer">
+      <p>&copy; 2025 NursyaniqahAmisyah | Best viewed in Chrome | Last updated: May 20, 2025</p>
+    </div>
+
+</body>
+</html>

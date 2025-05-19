@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Little Joys</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf7;
+      color: #333;
+    }
+
+    #container {
+      max-width: 1700px;
+      margin: auto;
+      background-color: #fce5e5;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(252, 229, 229, 0.8);
+      padding: 20px;
+    }
+
+    #header img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 3px solid #ffb6c1;
+    }
+
+    #nav {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 10px;
+    }
+
+    #nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 10px;
+      padding: 10px 18px;
+      background: linear-gradient(to right, #ffe0e0, #fddcdc);
+      border-radius: 8px;
+      display: inline-block;
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    #nav a:hover {
+      background: linear-gradient(to right, #ffbcbc, #ffa0a0);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5em;
+    }
+
+    .section {
+      padding: 40px 20px;
+      border-bottom: 1px solid #eee;
+      text-align: center;
+    }
+
+    .interest-title {
+      font-size: 2em;
+      margin-bottom: 20px;
+      font-family: 'Pacifico', cursive;
+      color: #d67f7f;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: transparent;
+      width: 250px;
+      height: 300px;
+      perspective: 1000px;
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .card-front {
+      background: #fff;
+    }
+
+    .card-back {
+      background: #fcefee;
+      transform: rotateY(180deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      color: #444;
+      font-size: 0.95em;
+    }
+
+    .card-front img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    .card-front p {
+      padding: 10px;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #fcefee;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        width: 90%;
+        height: 320px;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 20px;
+        font-family: 'Pacifico', cursive;
+        color: #d67f7f;
+      }
+    }
+
+    #footer {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 10px;
+      color: black;
+      font-size: 0.9em;
+      border-top: 2px solid #ffb6c1;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id="container">
+    <div id="header">
+      <img src="images/header_resized.png" alt="header" />
+    </div>
+
+     <div id="nav">
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="family.html">Family & Friends</a>
+      <a href="interests.html">Interests</a>
+      <a href="events.html">Life Events</a>
+      <a href="hometown.html">Hometown</a>
+    </div>
+
+
+
+  <section>
+  <h2 style= "text-align: center;">🌷Get to know people around me🌷</h2>
+  
+  <div class="section" id="supporter">
+    <div class="interest-title">My Supporter</div>
+    <div class="gallery">
+      <div class="card"> 
+        <div class="card-inner">  
+           <div class="card-front"> 
+             <img src="images/mama.jpg" alt="mama"> 
+             <p> Asiah Binti Muhidin<strong><br>I adore you so much🥺</strong></p>
+           </div>
+          <div class="card-back">
+            <p><strong>Sometimes, i cannot understand your act, but little did you know i believe in all your words. I believe you, and I am happy to have you as my mom.</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/bapa.jpg" alt="bapa">
+            <p> the one that i cannot life without ⭐</strong></p>
+           </div>
+          <div class="card-back">
+            <p><strong>In another life, I still want you two be my parents. No matter what.</strong></p>
+          </div>
+        </div>
+      </div>
+       <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/mamabapa.jpg" alt="mamabapa">
+            <p>Shamsuddin Bin Ariffin<strong><br>When talk about you I will cry </strong></p>
+          </div>
+          <div class="card-back">
+            <p><strong>Maybe you think I do not care of you as I take care of mama, but I do. I always pray to Allah to always take care of you wherever you are. This world may be cruel to you, but you kept silent. Thank you for all your sacrifice, may Allah grant you the highest Jannah. and I will try my best to tack care of myself. No worries.</strong></p></strong></p>
+          </div> 
+        </div> 
+      </div>
+    </div>
+  </div>
+  
+<div class="section" id="sibling">
+    <div class="interest-title"> from the same womb </div>
+    <div class="gallery">
+      <div class="card"> 
+        <div class="card-inner">  
+           <div class="card-front"> 
+             <img src="images/kakak.jpg" alt="adam"> 
+             <p>Nursyahfiqah Shahirah Akasyah ⭐</p>
+          </div>
+          <div class="card-back">
+            <p><strong>I kept looking forward what you will do in your life. My inspiration to become a good daughter, my role model because of your academic achievement. One word for you, stop hars on yourself, you doing good.</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/adam.jpg" alt="adam">
+            <p>Muhammad Ammar Adamsyah ⭐</p>
+          </div>
+          <div class="card-back">
+            <p><strong>The one who teach me to became a good person that I've became now. He may still a kid but he so matured and teach me a lot in life.</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="section" id="school friends">
+    <div class="interest-title">My friends</div>
+    <div class="gallery">
+      <div class="card"> 
+        <div class="card-inner">  
+           <div class="card-front"> 
+             <img src="images/trio4.jpg" alt="trio4"> 
+             <p>Cafe hunting low budget ⭐</p>
+          </div>
+          <div class="card-back">
+            <p><strong>Lastday before eveyone broke apart for our future. Two of them will continue their foundation, other one continue her STPM, and me continue my diploma far away from them.</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/flower.jpg" alt="flower">
+            <p>This is a group ring that Ain bought ⭐</p>
+          </div>
+          <div class="card-back">
+            <p><strong>People says friend that you meet in teenagers life is the sincere friendship that you ever found because we do not need money to hang out, just four of us in one table and sharing a random stories.</strong></p>
+          </div>
+        </div>
+      </div>
+       <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/trio2.jpg" alt="trio2">
+            <p>After 1 year, we reunion again ⭐</p>
+          </div>
+          <div class="card-back">
+            <p><strong>Eat together and talk about current life.</strong></p>
+          </div> 
+        </div> 
+      </div>
+    </div>
+  </div>
+
+<div class="section" id="university friends">
+    <div class="interest-title">My University Friends</div>
+    <div class="gallery">
+      <div class="card"> 
+        <div class="card-inner">  
+           <div class="card-front"> 
+             <img src="images/nurin1.jpg" alt="nurin"> 
+             <p>Nurin Ayzzasyura⭐</p>
+          </div>
+          <div class="card-back">
+            <p><strong>She's a natural person. When having argument in the group she will come out with a neutral opinion without backup others.</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/izzah1.jpg" alt="izzah">
+            <p>Izzah Batrisyia ⭐</p>
+          </div>
+          <div class="card-back">
+            <p><strong>Funny and happy go lucky. When she talk, everyone will laugh such a moodmaker in my circle.</strong></p>
+          </div>
+        </div>
+      </div>
+       <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/arieysha1.jpg" alt="trio2">
+            <p>Nur Arieysha⭐</p>
+          </div>
+          <div class="card-back">
+            <p><strong>She loves to laugh. Sometimes, I will laughing not because of the topic is hillarious but because of her.</strong></p>
+          </div> 
+        </div> 
+      </div>
+       <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/melyssa.jpg" alt="trio2">
+            <p>Mellysa Syaqiera⭐</p>
+          </div>
+          <div class="card-back">
+            <p><strong> She just quiet but sometimes talkative.</strong></p>
+    </div>
+     </div>
+       </div>
+        <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/wani1.jpg" alt="trio2">
+            <p>Rahwani ⭐</p>
+          </div>
+          <div class="card-back">
+            <p><strong>I hate youngest children. But not her.</strong></p>
+    </div>
+      </div>
+         </div>
+    </div>
+  </div>
+
+     
+       
+
+
+
+ 
+
+  </section>
+
+<div id="footer">
+      <p>&copy; 2025 NursyaniqahAmisyah | Best viewed in Chrome | Last updated: May 20, 2025</p>
+    </div>
+
+
+</body>
+</html>

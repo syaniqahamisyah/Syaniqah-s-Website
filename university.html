@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Education</title>
+      <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<style type="text/css">
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #9a5543;
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      max-width: 1500px;
+      margin: auto;
+      background-color: #fce5e5;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(252, 229, 229,);
+      padding: 20px;
+    }
+
+    #header img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 3px solid #ffb6c1;
+
+    }
+
+      #nav {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 10px;
+
+    }
+
+   #nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px 18px;
+  background: linear-gradient(to right, #ffe0e0, #fddcdc);
+  border-radius: 8px;
+  display: inline-block;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#nav a:hover {
+  background: linear-gradient(to right, #ffbcbc, #ffa0a0);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+    #footer {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 10px;
+      color: black;
+      font-size: 0.9em;
+      border-top: 2px solid #ffb6c1;
+    }
+
+  .video-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap; 
+      padding: 20px;
+    }
+
+    video {
+      width: 300px;
+      height: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border: 1px solid black;
+      border-radius: 12px; 
+      outline: #9a5543 solid 3px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 20px;
+      font-family: 'Pacifico', cursive;
+      color: #d67f7f;
+   }   
+
+ p {
+     text-align: center;
+   }
+
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <img src="images/header_resized.png" alt="header" />
+    </div>
+
+    <div id="nav">
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="family.html">Family & Friends</a>
+      <a href="interests.html">Interests</a>
+      <a href="events.html">Life Events</a>
+      <a href="hometown.html">Hometown</a>
+    </div>
+
+
+ <title>University</title>
+</head>
+<body>
+  <h1><p style="text-align: center;"/p>🏫Education Journey🏫</h1>
+
+  <h2>👩‍🎓University👩‍🎓</h2>
+  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+      <img src="images/uitmk1.jpg" style="width: 400px; height: auto; border: 1px solid black; border-radius: 12px; outline: #9a5543 solid 3px;" />
+  </div>
+
+
+
+<h2>Memories⋆｡˚ ☁︎ ˚｡⋆｡˚☽˚｡⋆</h2>
+<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+<video width="520" height="240" autoplay muted loop>
+  <source src="motor.mp4" type="video/mp4">
+  <source src="video/motor.mp4" type="video/mp4">
+</video>
+
+<video width="520" height="240" autoplay muted loop>
+  <source src="kereta.mp4" type="video/mp4">
+  <source src="video/kereta.mp4" type="video/mp4">
+</video>
+
+<video width="520" height="240" autoplay muted loop>
+  <source src="sawah.mp4" type="video/mp4">
+  <source src="video/sawah.mp4" type="video/mp4">
+</video>
+</div>
+
+<script>
+  window.onload = function() {
+    const videos = document.querySelectorAll(".vid");
+
+
+    videos.forEach(video => {
+      video.play().catch(error => {
+        console.log("Autoplay failed:", error);
+    
+     videos.forEach(video => {
+      video.currentTime = 0;
+      video.play();
+
+      setTimeout(() => {
+        video.pause();
+      }, 9000); 
+
+      });
+    });
+  };
+</script>
+
+    <p>Study far away from home isn't easy. but thank god, i was surrounded by beauty and kind of soul. Not mention my roomates, friend and other person that passing by me, everyone just so kind towards me, Alhamdullilah.🥰</p>
+</section>
+
+
+  <a href="secondary.html">
+    <button>Previous</button>
+  </a>
+  <br><br>
+  <div id="footer">
+      <p>&copy; 2025 NursyaniqahAmisyah | Best viewed in Chrome | Last updated: May 20, 2025</p>
+    </div>
+</body>
+</html>
